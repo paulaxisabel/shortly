@@ -1,0 +1,25 @@
+.boost__section {
+    min-height: 300px;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('../images/bg-boost-mobile.svg') no-repeat right top var(--dark-violet);
+}
+
+.boost__title {
+    font-size: 1.625rem;
+    color: var(--white);
+}
+
+@media (min-width: 991px) {
+    .boost__section {
+        min-height: 250px;
+        background-image: url('../images/bg-boost-desktop.svg');
+    }
+
+    .boost__title {
+        font-size: 2.375rem;
+    }
+}

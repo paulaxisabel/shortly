@@ -1,0 +1,101 @@
+:root {
+    --cyan: hsl(180, 66%, 49%);
+    --cyan-light: hsl(180, 56%, 69%);
+    --dark-violet: hsl(257, 27%, 26%);
+    --red: hsl(0, 87%, 67%);
+
+    --very-light: hsl(255, 30%, 96%);
+    --light: hsl(0, 0%, 75%);
+    --gray: hsl(257, 7%, 63%);
+    --dark: hsl(255, 11%, 22%);
+    --very-dark: hsl(260, 8%, 14%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.7;
+    background-color: var(--white);
+    min-width: 375px;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.3;
+    margin-top: 0;
+    color: var(--dark);
+}
+
+p {
+    margin-top: 0;
+}
+
+.container {
+    max-width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.bg-very-light {
+    background-color: var(--very-light);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.page__body {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    max-width: 52ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page__title {
+    font-size: 1.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.page__text {
+    color: var(--gray);
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .page__body {
+        padding-top: 7.75rem;
+        padding-bottom: 6.25rem;
+    }
+
+    .page__title {
+        font-size: 2.375rem;
+        margin-bottom: 1rem;
+    }
+
+    .page__text {
+        font-size: 1.125rem;
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "url-shortening-api-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the URL shortening API landing page challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byronbyron/url-shortening-api.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.39",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.1.0"
+  }
+}

@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+    .fade-1 {
+        animation: .5s .25s fade backwards ease-out;
+    }
+
+    .fade-2 {
+        animation: .5s .5s fade backwards ease-out;
+    }
+
+    .slide-3 {
+        animation: .5s 1s slide backwards ease-out;
+    }
+}
+
+@keyframes fade {
+    from {
+        transform: translate3d(0, -1rem, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translate3d(2rem, 0, 0);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,123 @@
+.header__navbar {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo {
+    margin-right: auto;
+
+    &,
+    img {
+        display: block;
+    }
+}
+
+.header__nav-collapse {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 1.5rem 2.5rem;
+    background: var(--dark-violet);
+    border-radius: 0.625rem;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale3d(0.95, 0.95, 1) translate3d(0, 1rem, 0);
+    transition: visibility 0.15s, opacity 0.15s, transform 0.15s;
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+.header__nav {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.header__nav-link {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--white);
+    padding: 0.75rem 0;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header__nav--secondary {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+
+    li:last-child {
+        margin-top: 0.75rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header__nav--secondary .btn-pill--small {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+}
+
+@media (min-width: 991px) {
+    .header__navbar {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .header__logo {
+        margin-right: 1.8125rem;
+        margin-top: 3px;
+        padding-left: 2px;
+    }
+
+    .header__nav-collapse {
+        position: static;
+        padding: 0;
+        background: none;
+        border-radius: 0;
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+        display: flex;
+    }
+
+    .header__nav {
+        display: flex;
+    }
+
+    .header__nav-link {
+        font-size: 0.9375rem;
+        padding: 0.5rem 1rem;
+        color: var(--gray);
+        transition: color 0.15s;
+
+        &:hover,
+        &:focus {
+            color: var(--dark);
+        }
+    }
+
+    .header__nav--secondary {
+        border: 0;
+        margin: 0 0 0 auto;
+        padding-top: 0;
+
+        li {
+            margin-left: 1.25rem;
+        }
+
+        li:last-child {
+            margin-top: 0;
+        }
+    }
+}
